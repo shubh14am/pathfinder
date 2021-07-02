@@ -1,0 +1,45 @@
+.navbar{
+    width: 100%vw;
+    height: 8rem;
+    // background-color: #34495E;
+    padding: 0px;
+}
+#heading{
+    text-align: left;
+    padding: 1rem;
+}
+
+#logo{
+    margin-right: 1rem;
+    float: left;
+}
+#name{
+    margin: 0px;
+    margin-top:5px ;
+    font-family: 'Ranchers', cursive;
+    color: #5A5A5A;
+    font-weight: 50;
+}
+
+.dropdown-menu{
+    width: 200px;
+    margin: 0px;
+    padding: 0px;
+}
+select{
+    height: 2.5rem;
+    border-style: none;
+    border-radius: 5px;
+    color: #5a5a5a;
+    padding: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+#bulb{
+    position:absolute;
+    top:2rem;
+    left:590px;
+}

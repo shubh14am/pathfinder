@@ -1,0 +1,36 @@
+html{
+    align-content: center;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    align-content: center;
+    text-align: center;
+    margin: 0px;
+}
+
+
+.details{
+
+    width: 100%vw;
+    height:10rem;
+    // background-color: red;
+}
+
+.features{
+    background-color: skyblue;
+    height: 3rem;
+    width: 100%vw;
+    margin: 0px;
+}
+.options{
+   
+    display: flex;
+    padding: 8px;
+    background-color: #5a5a5a;
+
+}
+
+

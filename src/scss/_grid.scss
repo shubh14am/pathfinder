@@ -1,0 +1,122 @@
+td{
+    height: 25px;
+    width: 25px;
+    line-height: 20px;
+    border-right:1px solid rgb(0, 255, 242);
+    border-top:1px solid rgb(0, 255, 242);
+
+}
+table{
+    border-spacing: 0px;
+    margin: 0px 3px;
+    margin-bottom: 1rem;
+    border: 0.5px solid rgb(0, 255, 242);
+
+}
+
+.cur{
+    background-color: rgba(255, 255, 0, 0.774);
+}
+.start{
+    background-image: url("../svg/triangletwo-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
+    animation-name: start-end-animation;
+    animation-duration: 1s;
+}
+.end{
+    background-image: url("../svg/circle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
+    animation-name: start-end-animation;
+    animation-duration: 1s;
+}
+@keyframes start-end-animation{
+  0%{
+    background-size: 13px;
+  }
+  50%{
+    background-size: 27px;
+  }
+  100%{
+    background-size: 22px;
+  }
+}
+
+.def::after{
+    animation-name: cell-animation-blue;
+    animation-duration: 1s;
+    background-color:rgba(0, 190, 218, 0.75);
+    margin: 0px;
+    content: '';
+    width: 24px;
+    height: 26px;
+    position: absolute;
+    transform: translateX(-12px) translateY(-13px);
+}
+.abc::after{
+    animation-name: cell-animation-purple;
+    animation-duration: 1s;
+    background-color: rgba(178, 67, 255, 0.75);
+    margin: 0px;
+    content: '';
+    width: 24px;
+    height: 26px;
+    position: absolute;
+    transform: translateX(-12px) translateY(-13px);
+}
+@keyframes cell-animation-blue{
+   0% {
+    transform: translateX(-2px) translateY(-2px);
+    width: 0px;
+    height: 0px;
+    background-color: rgba(0, 0, 66, 0.75);
+    border-radius: 100%;
+  }
+
+  50% {
+    background-color: rgba(17, 104, 217, 0.75);
+  }
+
+  75% {
+    width:28px;
+    height: 30px;
+    background-color: rgba(0, 217, 159, 0.75);
+  }
+
+  100% {
+    width:24px;
+    height: 26px;
+    background-color: rgba(0, 190, 218, 0.75);
+  }
+    
+}
+// #40CEE3
+@keyframes cell-animation-purple{
+    0% {
+    width: 0px;
+    height: 0px;
+    transform: translateX(-3px) translateY(-3px);
+
+    background-color: rgba(41, 4, 24, 0.75);
+    border-radius: 100%;
+  }
+
+  50% {
+    background-color: rgba(97, 0, 20, 0.75);
+  }
+
+  75% {
+    width:28px;
+    height: 30px;
+    background-color: rgba(216, 5, 141, 0.75)
+  }
+
+  100% {
+    width: 24px;
+    height: 26px;
+    background-color: rgba(178, 67, 255, 0.75);
+  }
+}
